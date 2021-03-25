@@ -11,17 +11,17 @@
         const contador = localStorage.getItem('1')
         const htmlRoot = document.getElementById('root')
         const Imagen = () => {
-        const style = {
+          const style = {
             width: '200px',
             height: '200px',
             backgroundImage: 'url(descarga.jpeg)',
             textAlign: 'center',
             position: 'relative',
             left: '44%',
-            top: '100px'
+            top: '100px',
           }
 
-          return(
+          return (
             <div style={style}> </div>
           )
         }
@@ -30,10 +30,10 @@
           const style = {
             fontSize: '50px',
             textAlign: 'center',
-            color: 'white'
-            //alignSelf: 'flex-start'
+            color: 'white',
+            // alignSelf: 'flex-start'
           }
-          return(
+          return (
             <h1 style={style}>GANASTE</h1>
           )
         }
@@ -44,40 +44,38 @@
             textAlign: 'center',
             color: 'white',
             alignSelf: 'flex-end',
-            position:'absolute',
-            bottom:'10px',
-            left:'100px'
-            //alignSelf: 'flex-start'
+            position: 'absolute',
+            bottom: '10px',
+            left: '100px',
+            // alignSelf: 'flex-start'
           }
-          return(
+          return (
+            // eslint-disable-next-line react/jsx-one-expression-per-line
             <h1 style={style}>Tus pasos totales fueron: + {contador} </h1>
           )
         }
 
+const App = () => {
+          const appStyle = {
+            backgroundImage: 'url(maxresdefault.jpg)',
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+          }
 
-
-        const App = () => {
-
-        const appStyle = {
-        backgroundImage: 'url(maxresdefault.jpg)',
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column'
-        }
-
-        return (
-        <div style={appStyle}>
-            <Titulo/>
-            <Imagen/>
-            <Pasos/>
-        </div>
-        )
+          return (
+            <div style={appStyle}>
+              <Titulo />
+              <Imagen />
+              <Pasos />
+            </div>
+          )
         }
 
         ReactDOM.render(
-        <App />,
-        htmlRoot
+  <App />,
+          htmlRoot,
         )
     </script>
 </body>
