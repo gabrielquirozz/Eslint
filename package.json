@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint Facil.html"
+    "lint": "eslint Facil.html Dificil.html Inicio.html"
   },
   "author": "Gabriel",
   "license": "ISC",
